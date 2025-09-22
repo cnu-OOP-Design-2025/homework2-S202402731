@@ -59,7 +59,6 @@ void fillStudentRecord(StudentStruct *students, int *numOfStudent) {
 /* Return student ID */
 int findBestStudentInMidterm(StudentStruct* students, int numOfStudent) {
     /* TODO */
-    if(numOfStudent == 0) return -1;
     int bestIdx = 0;
     for (int i = 1; i < numOfStudent; i++) {
         if (students[i].record.midterm > students[bestIdx].record.midterm) {
@@ -72,7 +71,6 @@ int findBestStudentInMidterm(StudentStruct* students, int numOfStudent) {
 /* Return student ID */
 int findBestStudentInFinal(StudentStruct* students, int numOfStudent) {
     /* TODO */
-    if(numOfStudent == 0) return -1;
     int bestIdx = 0;
     for (int i = 1; i < numOfStudent; i++) {
         if (students[i].record.final > students[bestIdx].record.final) {
@@ -85,7 +83,6 @@ int findBestStudentInFinal(StudentStruct* students, int numOfStudent) {
 /* Return student ID */
 int findBestStudent(StudentStruct* students, int numOfStudent) {
     /* TODO */
-    if(numOfStudent == 0) return -1;
     int bestIdx = 0;
     for (int i = 1; i < numOfStudent; i++) {
         float bestTotal = students[bestIdx].record.midterm + students[bestIdx].record.final;
