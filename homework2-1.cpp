@@ -65,7 +65,4 @@ namespace FloatCalc {
     }
 }
 
-int main () {
-    IntCalc::calc();
-    FloatCalc::calc();
-}
+
